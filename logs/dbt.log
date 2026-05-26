@@ -56,3 +56,18 @@ Runtime Error
 [0m11:41:32.387915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA6C472BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA6B0B6BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA6C472590>]}
 [0m11:41:32.389921 [debug] [MainThread]: Flushing usage events
 [0m11:41:34.228395 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:36:44.949225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A817822D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A8150FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A827CECD0>]}
+
+
+============================== 12:36:44.951480 | ee235ba8-75c1-401a-bc9e-4e3cfef67670 ==============================
+[0m12:36:44.951480 [info ] [MainThread]: Running with dbt=1.11.7
+[0m12:36:44.959416 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\navasant\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run-operation learn_logging', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:36:44.961559 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\navasant\OneDrive - Capgemini\30091187\Learning\DBT\dbt\git\dbt-student-repo\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:36:44.963563 [debug] [MainThread]: Command `dbt run-operation` failed at 12:36:44.963563 after 0.27 seconds
+[0m12:36:44.963563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A827CF150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028A827CD150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AFAC55310>]}
+[0m12:36:44.965305 [debug] [MainThread]: Flushing usage events
+[0m12:36:46.191755 [debug] [MainThread]: An error was encountered while trying to flush usage events

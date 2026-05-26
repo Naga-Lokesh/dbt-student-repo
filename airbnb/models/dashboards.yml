@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  - name: executive_dashboards
+    label: Executive Dashboards
+    type: dashboard
+    maturity: low
+    url: https://a2105e59.us1a.app.preset.io/superset/dashboard/8/?edit=true&native_filters_key=6YxlKNq87Tc
+    description: Executive Dashboards about Airbnb listings and hosts
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+    
+    owner:
+      name: Naga Lokesh
+      email: nagalokesh@gmail.com
